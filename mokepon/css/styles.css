@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
+
+body{
+    font-family: "Amita", serif;
+    background-color: #A5B68D;
+
+}
+#seleccionar-mascota{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.tittle{
+    color: #FCFAEE;
+    font-size: 32px;
+
+   
+}
+.tarjetas, .tarjeta-ataque{
+    display: flex;
+    gap: 10px;
+}
+
+.subtitulo{
+    color: #FCFAEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon{
+    height: 100px;
+    width: 180px;
+    background: #ECDFCC;
+    color: #FCFAEE;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input:checked + label {
+background-color: #DA8359;
+}
+.tarjeta-de-mokepon img{
+    width: 80px;
+    height: 80px;
+
+}
+#boton-mascota{
+    font-family: "Amita", serif;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    color: #FCFAEE;
+    margin-top: 40px;
+    border: 2px solid #DA8359;
+
+}
+input{
+    display: none;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+}
+   
+
+.boton-ataque{ 
+    color: #DA8359;
+    font-family: "Amita", serif;
+    border-radius: 20px;
+    background-color: #ECDFCC;
+    height: 100px;
+    width: 180px;
+    font-size: 35px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-color: transparent;
+}
+#boton-reiniciar{
+    font-family: "Amita", serif;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: #A5B68D;
+    color: #FCFAEE;
+    margin-top: 40px;
+    border: 2px solid transparent
+
+}
+.vidas{
+    font-family: "Amita", serif;
+    color: #FCFAEE;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#mensajes{
+    font-family: "Amita", serif;
+    color: #FCFAEE;
+    border-radius: 5px;
+    width: 280px;
+    padding: 20px;
+    background: #ECDFCC;
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 360px){
+    .tarjetas, .tarjeta-ataque{
+      flex-direction: column;
+    }
+  }
